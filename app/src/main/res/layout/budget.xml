@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="562dp"
+        android:layout_height="832dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background2" />
+
+    <ImageView
+        android:id="@+id/barBack"
+        android:layout_width="410dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bar" />
+
+    <ImageView
+        android:id="@+id/update_image"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/updateGraph"
+        app:layout_constraintEnd_toEndOf="@+id/updateGraph"
+        app:layout_constraintStart_toStartOf="@+id/updateGraph"
+        app:layout_constraintTop_toTopOf="@+id/updateGraph"
+        app:srcCompat="@drawable/update_button" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/budget"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/budget"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/input"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/input"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/background_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/stats_full"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <ProgressBar
+        android:id="@+id/stats_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="75"
+        android:progressDrawable="@drawable/stats_progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/remBudgetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sketchy"
+        android:text="@string/remBudgetText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/background_progressbar"
+        app:layout_constraintEnd_toEndOf="@+id/background_progressbar"
+        app:layout_constraintStart_toStartOf="@+id/background_progressbar"
+        app:layout_constraintTop_toTopOf="@+id/background_progressbar"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <TextView
+        android:id="@+id/dollarsLeft_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sketchy"
+        android:text="@string/budget_dollarsLeft_label"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/background_progressbar"
+        app:layout_constraintEnd_toEndOf="@+id/background_progressbar"
+        app:layout_constraintStart_toStartOf="@+id/background_progressbar"
+        app:layout_constraintTop_toBottomOf="@+id/remBudgetText"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/daysLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sketchy"
+        android:text="@string/budget_daysLeft"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/background_progressbar"
+        app:layout_constraintEnd_toEndOf="@+id/background_progressbar"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/background_progressbar"
+        app:layout_constraintTop_toBottomOf="@+id/dollarsLeft_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/search_button_image"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/search_button" />
+
+    <ImageView
+        android:id="@+id/data_button_image"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/setBudget_image"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/data_button" />
+
+    <ImageView
+        android:id="@+id/setBudget_image"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="680dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/budget"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/setbudget_button" />
+
+    <EditText
+        android:id="@+id/moneySpent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="7"
+        android:fontFamily="@font/sketchy"
+        android:hint="@string/budget_moneySpent"
+        android:inputType="numberDecimal"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/budget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_progressbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/updateGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toEndOf="@+id/moneySpent"
+        app:layout_constraintTop_toBottomOf="@+id/background_progressbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/savedMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sketchy"
+        android:text="@string/budget_savedMoney"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="130sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_progressbar"
+        app:layout_constraintVertical_bias="0.663" />
+
+    <TextView
+        android:id="@+id/savedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="@string/budget_savedTitle"
+        android:fontFamily="@font/sketchy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_progressbar"
+        app:layout_constraintVertical_bias="0.03" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Budget</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="update">Update</string>
+    <string name="remBudgetText">0</string>
+    <string name="budget_moneySpent">Money Spent</string>
+    <string name="budget_savedTitle">You\'ve Saved:</string>
+    <string name="budget_savedMoney">134.46</string>
+    <string name="budget_dollarsLeft_label">Dollars Left</string>
+    <string name="budget_daysLeft">0 Days Left</string>
+    <string name="budget_7daysLeft">7 Days left"</string>
+    <string name="budget_30daysLeft">30 Days left"</string>
+</resources>

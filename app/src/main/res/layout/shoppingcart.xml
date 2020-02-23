@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/foreground"
+        android:layout_width="414dp"
+        android:layout_height="417dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/shoppingcartbackground" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        android:background="@color/cardview_dark_background"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Label2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Strawberry"
+        android:visibility="invisible"
+        android:fontFamily="@font/sketchy"
+        android:textSize="34sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <TextView
+        android:id="@+id/Label3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Spinach"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="invisible"
+        android:fontFamily="@font/sketchy"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343" />
+
+    <TextView
+        android:id="@+id/Label1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="@font/sketchy"
+        android:text="Carrot"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="34sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <TextView
+        android:id="@+id/cost1"
+        android:layout_width="8dp"
+        android:layout_height="23dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="136dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="invisible"
+        android:fontFamily="@font/sketchy"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/cost2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="invisible"
+        android:fontFamily="@font/sketchy"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <TextView
+        android:id="@+id/cost3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="0"
+        android:fontFamily="@font/sketchy"
+        android:textSize="34sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343" />
+
+    <TextView
+        android:id="@+id/totalCostLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Total Cost"
+        android:fontFamily="@font/sketchy"
+        android:textSize="34sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <TextView
+        android:id="@+id/totalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="0"
+        android:fontFamily="@font/sketchy"
+        android:textSize="34sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toEndOf="@+id/totalCostLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.429" />
+
+    <ImageView
+        android:id="@+id/straw1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196"
+        app:srcCompat="@drawable/strawberry" />
+
+
+    <ImageView
+        android:id="@+id/car1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/straw1"
+        app:layout_constraintEnd_toEndOf="@+id/straw1"
+        app:layout_constraintStart_toStartOf="@+id/straw1"
+        app:layout_constraintTop_toTopOf="@+id/straw1"
+        app:srcCompat="@drawable/carrot" />
+
+    <ImageView
+        android:id="@+id/car2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/spin2"
+        app:layout_constraintEnd_toEndOf="@+id/spin2"
+        app:layout_constraintStart_toStartOf="@+id/spin2"
+        app:layout_constraintTop_toTopOf="@+id/spin2"
+        app:srcCompat="@drawable/carrot" />
+
+    <ImageView
+        android:id="@+id/car3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341"
+        app:srcCompat="@drawable/carrot" />
+
+    <ImageView
+        android:id="@+id/spin1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/straw1"
+        app:layout_constraintEnd_toEndOf="@+id/straw1"
+        app:layout_constraintStart_toStartOf="@+id/straw1"
+        app:layout_constraintTop_toTopOf="@+id/straw1"
+        app:srcCompat="@drawable/spinach" />
+
+    <ImageView
+        android:id="@+id/spin2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264"
+        app:srcCompat="@drawable/spinach" />
+
+    <TextView
+        android:id="@+id/calorieLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sketchy"
+        android:text="Calories (kcal)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <TextView
+        android:id="@+id/vELabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sketchy"
+        android:text="Vitamin E (mg)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calorieLabel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/vB6Val"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="20"
+        android:fontFamily="@font/sketchy"
+        android:textSize="32sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proteinVal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ironVal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:fontFamily="@font/sketchy"
+        android:text="20"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vB6Val"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/proteinLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sketchy"
+        android:text="Protein (g)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/VB6Label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vELabel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/IronLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sketchy"
+        android:text="Iron (mg)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VB6Label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/vEVal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+
+        android:text="20"
+        android:fontFamily="@font/sketchy"
+        android:textSize="32sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calorieVal"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <TextView
+        android:id="@+id/proteinVal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="20"
+        android:fontFamily="@font/sketchy"
+        android:textSize="32sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vEVal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/VB6Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sketchy"
+        android:text="Vitamin B6 (mg)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vELabel"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <TextView
+        android:id="@+id/calorieVal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="20"
+        android:fontFamily="@font/sketchy"
+        android:textSize="32sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.574" />
+
+    <TextView
+        android:id="@+id/lackingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Missing Nutrients"
+        android:fontFamily="@font/sketchy"
+        android:textSize="36sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ironVal"
+        app:layout_constraintVertical_bias="0.224" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

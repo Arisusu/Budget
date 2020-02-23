@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="562dp"
+        android:layout_height="832dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background2" />
+
+    <ImageView
+        android:id="@+id/barBack"
+        android:layout_width="410dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bar" />
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numPeople"
+        app:layout_constraintVertical_bias="0.095" >
+
+        <RadioButton
+            android:id="@+id/monthly"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/sketchy"
+            android:onClick="onRadioButtonClicked"
+            android:text="Monthly"
+            android:textSize="36sp" />
+
+        <RadioButton
+            android:id="@+id/weekly"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/sketchy"
+            android:onClick="onRadioButtonClicked"
+            android:text="Weekly"
+            android:textSize="36sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/budget"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/budget"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/input"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_home"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/input"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/budgetAmount"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:fontFamily="@font/sketchy"
+        android:inputType="numberDecimal"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/numPeople"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toEndOf="@+id/budget_title"
+        app:layout_constraintTop_toBottomOf="@+id/input_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/numPeople"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:fontFamily="@font/sketchy"
+        android:inputType="number"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toEndOf="@+id/numPeople_title"
+        app:layout_constraintTop_toBottomOf="@+id/input_title"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <TextView
+        android:id="@+id/input_title"
+        android:layout_width="337dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/sketchy"
+        android:text="Update your information:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/numPeople_title"
+        android:layout_width="115dp"
+        android:layout_height="73dp"
+        android:fontFamily="@font/sketchy"
+        android:text="Number of people:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <TextView
+        android:id="@+id/schedule_title"
+        android:layout_width="118dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/sketchy"
+        android:text="Schedule:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <TextView
+        android:id="@+id/budget_title"
+        android:layout_width="118dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/sketchy"
+        android:text="Budget:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="188dp"
+        android:layout_height="47dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/budget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <ImageView
+        android:id="@+id/search_button_image"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="@+id/search"
+        app:layout_constraintEnd_toEndOf="@+id/search"
+        app:layout_constraintStart_toStartOf="@+id/search"
+        app:layout_constraintTop_toTopOf="@+id/search"
+        app:srcCompat="@drawable/search_button" />
+
+    <ImageView
+        android:id="@+id/data_button_image"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="@+id/budget"
+        app:layout_constraintEnd_toEndOf="@+id/input"
+        app:layout_constraintStart_toStartOf="@+id/search"
+        app:layout_constraintTop_toTopOf="@+id/budget"
+        app:srcCompat="@drawable/data_button" />
+
+    <ImageView
+        android:id="@+id/setBudget_image"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="@+id/input"
+        app:layout_constraintEnd_toEndOf="@+id/input"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/budget"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/setbudget_button" />
+
+    <TextView
+        android:id="@+id/input_updatedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sketchy"
+        android:text="Information Updated!"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_home"
+        app:layout_constraintVertical_bias="0.794" />
+
+    <ImageView
+        android:id="@+id/update_image"
+        android:layout_width="208dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toBottomOf="@+id/update"
+        app:layout_constraintEnd_toEndOf="@+id/update"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/update"
+        app:layout_constraintTop_toTopOf="@+id/update"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/update_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

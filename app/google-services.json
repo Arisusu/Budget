@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "208959193292",
+    "firebase_url": "https://budget-da95b.firebaseio.com",
+    "project_id": "budget-da95b",
+    "storage_bucket": "budget-da95b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208959193292:android:d28398f1dadfb5700f4269",
+        "android_client_info": {
+          "package_name": "com.example.budget"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208959193292-6olu4ne0c86hl2k2u7lbam3s9gba003p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.budget",
+            "certificate_hash": "14eab685c42a56183a5dacb360a1c1d5a901488b"
+          }
+        },
+        {
+          "client_id": "208959193292-ooulvsd7aq85ijndhi4jlmv01lsutgje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHFkQ3IVqGDne5WxowqxkoP6H9mDQ9lZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208959193292-ooulvsd7aq85ijndhi4jlmv01lsutgje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
